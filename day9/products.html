@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cameras</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+<script>
+
+$(function() {
+$('(data-toggle="tooltip")').tooltip();
+});
+</script>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+
+
+
+
+
+
+
+
+      <header>
+        <nav class="navbar navbar-custom navbar-expand-lg text-light">
+          <div class="container mx-0">
+            <img src="images/g-logo.png" width="60" data-toggle="tooltip" title="George Electronics" />
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId"
+              aria-controls="collapsibleNavId"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul
+                class="navbar-nav me-auto mt-2 mt-lg-0 d-flex align-items-center"
+              >
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="index.html" aria-current="page"
+                    ><img src="images/home_icon_white.svg" width="45" data-toggle="tooltip" title="Home" />
+                    <span class="visually-hidden">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Products</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="products.html">Cameras</a>
+                    <a class="dropdown-item" href="#">Computers</a>
+                    <a class="dropdown-item" href="#">TVs</a>
+                    <a class="dropdown-item" href="#">Professional Video</a>
+                    <a class="dropdown-item" href="#">Mobile</a>
+
+                    <a class="dropdown-item" href="#">Pro Audio</a>
+                    <a class="dropdown-item" href="#">Photo Accessories</a>
+                    <a class="dropdown-item" href="#">Drones & Camcorders</a>
+                    <a class="dropdown-item" href="#">Lighting</a>
+                    <a class="dropdown-item" href="#">Audio-Visual</a>
+                    <a class="dropdown-item" href="#">Surveillance</a>
+                    <a class="dropdown-item" href="#">Optics</a>
+
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+              <form class="d-flex my-2 my-lg-0">
+                <input
+                  class="form-control me-sm-2"
+                  type="text"
+                  placeholder="Enter search here"
+                />
+                <button
+                  class="btn btn-outline-light my-2 my-sm-0"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+
+
+
+
+            </span>
+              <span class="px-3">
+                <a href="#">
+                  <img src="images/heart_icon_white.svg" width="40" 
+                  data-toggle="tooltip" title="Favorites"/>
+                </a>
+              </span>
+              <span>
+                <a href="#"> <img src="images/cart_icon_white.svg" width="40" 
+                  data-toggle="tooltip" title="Cart"/></a>
+              </span>
+              <span class="ps-3">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Log in
+                </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-body p-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+      <div class="my-form">
+        <h5 class="pb-5"><i class="fas fa-user pe-2"></i>LOG IN TO YOUR ACCOUNT</h5>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              ><b>Email address</b></label
+            >
+            <input
+              type="email"
+              class="form-control login-form"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"><b>Password</b></label>
+            <input
+              type="password"
+              class="form-control login-form"
+              id="exampleInputPassword1"
+            />
+          </div>
+        <div class="pt-2">
+          <button type="submit" class="btn btn-light btn-login">LOGIN</button>
+        </div>
+        </form>
+  
+        <p class="py-5">
+          Not a member?
+          <a href="#" class="text-light text-decoration-none ps-2">Sign up now</a>
+        </p>
+      </div>
+
+ 
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+      <div class="container-fluid py-2" id="content">
+        <nav class="breadcrumb">
+          <a class="breadcrumb-item" href="index.html">Home</a>
+          <span class="breadcrumb-item active" aria-current="page"
+            >Cameras</span
+          >
+        </nav>
+
+        <div class="d-inline-flex flex-row align-items-center">
+          <div>
+            <img
+              src="images/camera_icon_black.svg"
+              width="60"
+              class="p-0 m-0"
+              style="opacity: 50%"
+            />
+          </div>
+          <div>
+            <span class="text-secondary p-0 m-0 display-5">Cameras</span>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row py-5">
+
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white" >
+              <img
+                src="https://static.bhphoto.com/images/images345x345/1689157832_1776281.jpg"
+                alt=""
+                class="img-fluid card-img-top"
+                data-toggle="tooltip" title="Sony a6700 Premium Mirrorless Camera"
+              >
+              <div class="p-4">
+                <div class="py-3">
+                  <h4><span class="badge bg-danger px-3 rounded-pill">New</span></h4>
+              </div>
+                <h5><a href="#" class="text-dark font-weight-bold">Sony a6700 Premium Mirrorless Camera</a></h5>
+                <p class="small mb-1 py-2">
+                  <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(1)</span></a>
+            </p>
+              <div>
+                <div>
+                <span class="retail-price">$1,398.00</span><span class="discount-price">$419.40</span>
+              </div>
+                <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+          <div class="bg-white">
+            <img
+              src="https://static.bhphoto.com/images/images345x345/1667348713_1733214.jpg"
+              alt=""
+              class="img-fluid card-img-top"
+              data-toggle="tooltip" title="Canon EOS R6 Mark II Mirrorless Camera"
+            >
+            <div class="p-4">
+              <div class="py-3">
+                <h4><span class="badge bg-dark px-3 rounded-pill">Top seller</span></h4>
+              </div>
+              <h5><a href="#" class="text-dark font-weight-bold">Canon EOS R6 Mark II Mirrorless Camera</a></h5>
+              <p class="small mb-1 py-2">
+                <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(116)</span></a>
+          </p>
+            <div>
+              <div>
+              <span class="retail-price">$2,499.00</span><span class="discount-price">$749.70</span>
+            </div>
+              <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="bg-white">
+          <img
+            src="https://static.bhphoto.com/images/images345x345/1464866449_1233412.jpg"
+            alt=""
+            class="img-fluid card-img-top"
+            data-toggle="tooltip" title="Canon PowerShot ELPH 360 HS Digital Camera (Black)"
+          >
+          <div class="p-4">
+            <div class="py-3">
+              <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+            </div>
+            <h5><a href="#" class="text-dark font-weight-bold">Canon PowerShot ELPH 360 HS Digital Camera (Black)</a></h5>
+            <p class="small mb-1 py-2">
+              <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(85)</span></a>
+        </p>
+          <div>
+            <div>
+            <span class="retail-price">$299.00</span><span class="discount-price">$89.70</span>
+          </div>
+            <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+      <div class="bg-white">
+        <img
+          src="https://static.bhphoto.com/images/images345x345/1562622339_1490985.jpg"
+          alt=""
+          class="img-fluid card-img-top"
+          data-toggle="tooltip" title="Canon PowerShot G7 X Mark III Digital Camera (Black)"
+        >
+        <div class="p-4">
+          <div class="py-3">
+            <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+          </div>
+          <h5><a href="#" class="text-dark font-weight-bold">Canon PowerShot G7 X Mark III Digital Camera (Black)</a></h5>
+          <p class="small mb-1 py-2">
+            <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;</span> <span class="text-dark">(52)</span></a>
+      </p>
+        <div>
+          <div>
+          <span class="retail-price">$749.00</span><span class="discount-price">$224.70</span>
+        </div>
+          <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+    <div class="bg-white">
+      <img
+        src="https://static.bhphoto.com/images/images345x345/1455749513_1223211.jpg"
+        alt=""
+        class="img-fluid card-img-top"
+        data-toggle="tooltip" title="Canon PowerShot G7 X Mark II Digital Camera"
+      >
+      <div class="p-4">
+        <div class="py-3">
+          <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+        </div>
+        <h5><a href="#" class="text-dark font-weight-bold">Canon PowerShot G7 X Mark II Digital Camera</a></h5>
+        <p class="small mb-1 py-2">
+          <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(323)</span></a>
+    </p>
+      <div>
+        <div>
+        <span class="retail-price">$629.00</span><span class="discount-price">$188.70</span>
+      </div>
+        <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1688490906_1774544.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="FUJIFILM INSTAX MINI EVO Instant Camera (Black)"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">FUJIFILM INSTAX MINI EVO Instant Camera (Black)</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(63)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$199.00</span><span class="discount-price">$59.70</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1666779545_1731389.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Sony a7R V Premium Mirrorless Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Sony a7R V Premium Mirrorless Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(97)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$3,898.00</span><span class="discount-price">$1169.40</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1685004530_1768277.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Leica Q3 Premium Digital Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Leica Q3 Premium Digital Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(13)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$5,995.00</span><span class="discount-price">$1798.50</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1683705043_1765622.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Nikon Z8 Premium Mirrorless Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Nikon Z8 Premium Mirrorless Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(92)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$3,996.00</span><span class="discount-price">$1198.80</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1602634176_1598385.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Canon EOS M50 Mark II Mirrorless Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Canon EOS M50 Mark II Mirrorless Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(72)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$599.00</span><span class="discount-price">$179.70</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1667382377_1731281.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="FUJIFILM X-T5 Mirrorless Camera (Black)"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">FUJIFILM X-T5 Mirrorless Camera (Black)</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(96)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$1,699.00</span><span class="discount-price">$509.70</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1693311922_1784157.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Sony a7CR Premium Mirrorless Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-danger px-3 rounded-pill">New</span></h4>
+    </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Sony a7CR Premium Mirrorless Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(2)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$1,298.00</span><span class="discount-price">$389.40</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1627386359_1655301.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Sony ZV-E10 Premium Mirrorless Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Sony ZV-E10 Premium Mirrorless Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(76)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$798.00</span><span class="discount-price">$239.40</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1649678752_1699922.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Kodak PIXPRO FZ55 Digital Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Kodak PIXPRO FZ55 Digital Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(942)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$99.00</span><span class="discount-price">$29.70</span>
+    </div>
+      <div class="add-to-cart"> <img src="images/add_to_cart_black.svg" width="80" style="opacity: 40%;"></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1563789974_1477205.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Olympus Tough TG-6 Digital Camera (Red)"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-secondary px-3 rounded-pill">Out of Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Olympus Tough TG-6 Digital Camera (Red)</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;&#9733;&#9733;&#9733;</span> <span class="text-dark">(157)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$499.00</span><span class="discount-price">$149.70</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+  <div class="bg-white">
+    <img
+      src="https://static.bhphoto.com/images/images345x345/1681483534_1761641.jpg"
+      alt=""
+      class="img-fluid card-img-top"
+      data-toggle="tooltip" title="Ricoh GR III Diary Edition Digital Camera"
+    >
+    <div class="p-4">
+      <div class="py-3">
+        <h4><span class="badge bg-success px-3 rounded-pill">In Stock</span></h4>
+      </div>
+      <h5><a href="#" class="text-dark font-weight-bold">Ricoh GR III Diary Edition Digital Camera</a></h5>
+      <p class="small mb-1 py-2">
+        <a href="#" class="text-decoration-none"><span class="font-weight-bold text-warning">&#9733;</span> <span class="text-dark">(131)</span></a>
+  </p>
+    <div>
+      <div>
+      <span class="retail-price">$1,016.00</span><span class="discount-price">$304.80</span>
+    </div>
+      <div class="add-to-cart"> <a href="#"><img src="images/add_to_cart_black.svg" width="80"></a></div>
+    
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="pagination justify-content-center">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item active"><a class="page-link" href="#" style="background-color: grey; border:none">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<footer style="background-color: rgb(94, 76, 118)">
+  <div class="row mx-5 pb-5 pt-3">
+    <div class="col-6 col-md-2 mb-3 text-light px-3 py-2">
+      <h3 class="pb-3">Your Stuff</h3>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Order Status</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Account Info</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Rewards</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Gift Cards</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Payments & Financing</a
+        >
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3 text-light px-3 py-2">
+      <h3 class="pb-3">Get in Touch</h3>
+      <div>
+        <a
+          href="contact-us.html"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Contact Us</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Customer Support</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >International</a
+        >
+      </div>
+      <div>
+        <a
+          href="contact-us.html#vist-store"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Visit a Store</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Careers</a
+        >
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3 text-light px-3 py-2">
+      <h3 class="pb-3">Our Company</h3>
+      <div>
+        <a
+          href="about-us.html"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >About Us</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Our Company</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Returns</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >Free Shipping</a
+        >
+      </div>
+      <div>
+        <a
+          href="#"
+          class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+          >FAQs</a
+        >
+      </div>
+    </div>
+
+    <div class="col-md-5 offset-md-1 mb-3" id="footer-logo">
+      <div>
+        <a href="index.html">
+        <img src="images/g-logo.png" width="100" />
+        <img src="images/g-electronics.png" width="200" />
+      </a>
+      </div>
+      <div class="pt-3 px-3">
+        <img src="images/Credit-Card-Logos-high-resolution.png" width="200" />
+      </div>
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between py-2 px-2"
+      >
+        <ul class="list-unstyled d-flex pt-2">
+          <li class="px-2">
+            <a href="https://www.facebook.com" target="_blank">
+              <img
+                src="images/facebook_icon_white.svg"
+                width="30"
+                alt="Facebook"
+              />
+            </a>
+          </li>
+          <li class="px-2">
+            <a href="https://www.instagram.com" target="_blank">
+              <img
+                src="images/instagram_logo_icon_white.svg"
+                width="30"
+                alt="Instagram"
+              />
+            </a>
+          </li>
+          <li class="px-2">
+            <a href="https://www.reddit.com" target="_blank">
+              <img
+                src="images/reddit_logo_icon_white.svg"
+                width="30"
+                alt="Reddit"
+              />
+            </a>
+          </li>
+          <li class="px-2">
+            <a href="https://youtube.com" target="_blank">
+              <img src="images/youtube_logo_icon.svg" width="30" alt="YouTube" />
+            </a>
+          </li>
+          <li class="px-2">
+            <a href="https://whatsapp.com" target="_blank">
+              <img src="images/whatsapp_logo_icon.svg" width="30" alt="WhatsApp" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex text-light">
+      <span class="pe-3">©2023 All rights reserved.</span>
+      |
+      <a
+        href="#"
+        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+        >Privacy Notice</a
+      >
+      |
+
+      <a
+        href="#"
+        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+        >Do not Sell or Share My Personal Information</a
+      >
+      |
+      <a
+        href="#"
+        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+        >Cookie Notice</a
+      >
+      |
+      <a
+        href="#"
+        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+        >Terms of Service</a
+      >
+      |
+      <a
+        href="#"
+        class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+        >Accessibility</a
+      >
+    </div>
+  </div>
+</footer> 
+
+
+
+  </body>
+</html>
+
