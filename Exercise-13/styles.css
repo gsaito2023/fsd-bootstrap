@@ -1,0 +1,17 @@
+table {
+  border-color: black;
+}
+.container {
+  margin: 100px;
+}
+th {
+  font-weight: bold;
+}
+tr {
+  border-bottom: 1px solid grey;
+}
+th,
+td {
+  width: 30%;
+  padding: 15px;
+}
