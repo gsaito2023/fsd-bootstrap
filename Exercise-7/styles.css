@@ -1,0 +1,121 @@
+HTML {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: small;
+}
+
+hr {
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table {
+  border: 3px solid black;
+}
+
+tr {
+  height: 55px;
+}
+
+th,
+td {
+  border: 2px solid;
+  border-color: rgb(228, 227, 224);
+  padding: 0px 0px 0px 10px;
+}
+
+th,
+#tech-categories {
+  background-color: rgb(154, 179, 160);
+  font-weight: bold;
+}
+
+img {
+  padding: 0px 0px 0px 0px;
+  box-shadow: 2px 2px 10px 2px #909090ec;
+  width: 250px;
+  height: 250px;
+}
+
+#clear-table,
+#clear-border-lines {
+  border-color: rgb(251 248 234);
+}
+
+.background-yellow {
+  background-color: rgb(251 248 234);
+}
+
+#image-caption {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#tech-categories {
+  width: 245px;
+}
+
+#tech-description-width {
+  width: 700px;
+}
+
+#role-width {
+  width: 760px;
+}
+
+#duration-width {
+  width: 395px;
+}
+
+#image-cell {
+  width: 450px;
+  text-align: center;
+}
+
+.empty-cell-width {
+  width: 25%;
+}
+
+fieldset {
+  background-color: rgb(252 248 233);
+  height: 350px;
+  padding: 0px 0px 0px 1px;
+}
+
+.label-padding {
+  padding: 3px 0px 3px 0px;
+}
+
+#text-width {
+  width: 380px;
+}
+
+#form-width {
+  width: 650px;
+}
+
+#padding-with-avatar {
+  padding: 0px 85px 0px 15px;
+}
+#padding-without-avatar {
+  padding: 0px 0px 0px 15px;
+}
+
+#nav-padding {
+  padding-left: 10px;
+}
+
+li a:hover {
+  color: white !important;
+}
+
+li a {
+  color: yellow !important;
+}
