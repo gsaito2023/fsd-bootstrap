@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body id="content">
+    <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-custom navbar-expand-lg fixed-top text-light">
+        <div class="container mx-0">
+          <img src="images/g-logo.png" width="60" data-toggle="tooltip" title="George Electronics" />
+          <button
+            class="navbar-toggler d-lg-none custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul
+              class="navbar-nav me-auto mt-2 mt-lg-0 d-flex align-items-center"
+            >
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html" aria-current="page">
+              <img src="images/home_icon_white.svg" width="45" data-toggle="tooltip" title="Home" />
+              <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Products</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="products.html">Cameras</a>
+                <a class="dropdown-item" href="#">Computers</a>
+                <a class="dropdown-item" href="#">TVs</a>
+                <a class="dropdown-item" href="#">Professional Video</a>
+                <a class="dropdown-item" href="#">Mobile</a>
+                <a class="dropdown-item" href="#">Pro Audio</a>
+                <a class="dropdown-item" href="#">Photo Accessories</a>
+                <a class="dropdown-item" href="#">Drones & Camcorders</a>
+                <a class="dropdown-item" href="#">Lighting</a>
+                <a class="dropdown-item" href="#">Audio-Visual</a>
+                <a class="dropdown-item" href="#">Surveillance</a>
+                <a class="dropdown-item" href="#">Optics</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="faqs.html">FAQs</a>
+            </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                placeholder="Enter search here"
+              />
+              <button
+                class="btn btn-outline-light my-2 my-sm-0"
+                type="submit">
+                      Search
+              </button>
+            </form>
+            <span class="px-3">
+              <a href="#">
+                <img src="images/heart_icon_white.svg" width="40" 
+                  data-toggle="tooltip" title="Favorites"/>
+              </a>
+            </span>
+            <span>
+              <a href="#"> <img src="images/cart_icon_white.svg" width="40" 
+                data-toggle="tooltip" title="Cart"/></a>
+              </span>
+              <span class="ps-3">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Log in
+                </button>
+          </div>
+        </div>
+        </nav>
+      </header>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="my-form">
+                <h5 class="pb-5"><i class="fas fa-user pe-2"></i>LOG IN TO YOUR ACCOUNT</h5>
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">
+                      <b>Email address</b>
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control login-form"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"><b>Password</b></label>
+                    <input
+                      type="password"
+                      class="form-control login-form"
+                      id="exampleInputPassword1"/>
+                  </div>
+                  <div class="pt-2">
+                    <button type="submit" class="btn btn-light btn-login">LOGIN</button>
+                  </div>
+                </form>
+                <p class="py-5">
+                  Not a member?
+                  <a href="#" class="text-light text-decoration-none ps-2">Sign up now</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid" id="content">
+        <div class="content">
+          <nav class="breadcrumb">
+            <!-- <nav class="breadcrumb" style="padding-top: 100px;"> -->
+            <a class="breadcrumb-item" href="index.html">Home</a>
+            <span class="breadcrumb-item active" aria-current="page">
+              FAQs
+            </span>
+          </nav>
+        <div class="d-inline-flex flex-row align-items-center">
+          <div>
+            <img
+              src="images/faq_icon_black.png"
+              width="40"
+              class="p-0 m-0"
+              style="opacity: 50%"
+            />
+          </div>
+          <div>
+            <span class="text-secondary p-0 m-0 display-5 ps-1">FAQs</span>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <b>What payment methods are accepted?</b>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Currently, we only accept payment via credit card for individual memberships and teams consisting of less than 30 members.</p>
+                <p>We do not accept PayPal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <b>Do you offer gift cards?</b>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+              At the present time, we do not offer gift cards. Offer it in the future is under consideration.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>What is your return policy?</b>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We have a 60 day guarantee. If you are unhappy within 60 days you can return the item. This means you get plenty of time to know your gear.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <b>Can I pay with PayPal?</b>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                We currently do not accpet PayPal as a form of payment. Please either use Visa, Mastercard, AMEX or Discover. Thank you for your understanding. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="background-color: rgb(94, 76, 118)">
+      <div class="row mx-5 pb-5 pt-3">
+        <div class="col-6 col-md-2 mb-3 text-light px-3 py-2">
+          <h3 class="pb-3">Your Stuff</h3>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Order Status</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Account Info</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Rewards</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Gift Cards</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Payments & Financing</a
+            >
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3 text-light px-3 py-2">
+          <h3 class="pb-3">Get in Touch</h3>
+          <div>
+            <a
+              href="contact-us.html"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Contact Us</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Customer Support</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >International</a
+            >
+          </div>
+          <div>
+            <a
+              href="contact-us.html#vist-store"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Visit a Store</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Careers</a
+            >
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3 text-light px-3 py-2">
+          <h3 class="pb-3">Our Company</h3>
+          <div>
+            <a
+              href="about-us.html"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >About Us</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Our Company</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Returns</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >Free Shipping</a
+            >
+          </div>
+          <div>
+            <a
+              href="#"
+              class="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >FAQs</a
+            >
+          </div>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3" id="footer-logo">
+          <div>
+            <a href="index.html">
+            <img src="images/g-logo.png" width="100" />
+            <img src="images/g-electronics.png" width="200" />
+          </a>
+          </div>
+          <div class="pt-3 px-3">
+            <img src="images/Credit-Card-Logos-high-resolution.png" width="200" />
+          </div>
+          <div
+            class="d-flex flex-column flex-sm-row justify-content-between py-2 px-2"
+          >
+            <ul class="list-unstyled d-flex pt-2">
+              <li class="px-2">
+                <a href="https://www.facebook.com" target="_blank">
+                  <img
+                    src="images/facebook_icon_white.svg"
+                    width="30"
+                    alt="Facebook"
+                  />
+                </a>
+              </li>
+              <li class="px-2">
+                <a href="https://www.instagram.com" target="_blank">
+                  <img
+                    src="images/instagram_logo_icon_white.svg"
+                    width="30"
+                    alt="Instagram"
+                  />
+                </a>
+              </li>
+              <li class="px-2">
+                <a href="https://www.reddit.com" target="_blank">
+                  <img
+                    src="images/reddit_logo_icon_white.svg"
+                    width="30"
+                    alt="Reddit"
+                  />
+                </a>
+              </li>
+              <li class="px-2">
+                <a href="https://youtube.com" target="_blank">
+                  <img src="images/youtube_logo_icon.svg" width="30" alt="YouTube" />
+                </a>
+              </li>
+              <li class="px-2">
+                <a href="https://whatsapp.com" target="_blank">
+                  <img src="images/whatsapp_logo_icon.svg" width="30" alt="WhatsApp" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex text-light">
+          <span class="pe-3">©2023 All rights reserved.</span>
+          |
+          <a
+            href="#"
+            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+            >Privacy Notice</a
+          >
+          |
+
+          <a
+            href="#"
+            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+            >Do not Sell or Share My Personal Information</a
+          >
+          |
+          <a
+            href="#"
+            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+            >Cookie Notice</a
+          >
+          |
+          <a
+            href="#"
+            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+            >Terms of Service</a
+          >
+          |
+          <a
+            href="#"
+            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
+            >Accessibility</a
+          >
+        </div>
+      </div>
+    </footer> 
+  </body>
+</html>
