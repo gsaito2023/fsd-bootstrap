@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Greetings Props</title>
+    <title>Greetings</title>
   </head>
   <body>
     <!--********* Props! - send info to the child component from parent -->
@@ -21,25 +21,21 @@
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
-      // Functional component with props
-      let MyFunctionalComponentGreeting = (props) => {
+      // Functional component
+      let MyFunctionalComponentGreeting = () => {
         return (
           <div>
-            <h1> Greetings {props.name}, welcome to Procareer Academy!</h1>
+            <h1> Greetings, welcome to Procareer Academy!</h1>
             <h2> So glad you are here.</h2>
           </div>
         );
       };
-      // Class component with props
-      // Note to George. props require this keyword in classes.
+      // Class component
       class MyClassComponentGreeting extends React.Component {
-        constructor(props) {
-          super(props);
-        }
-        render(props) {
+        render() {
           return (
             <div>
-              <h1>Greetings {this.props.name}! Welcome also.</h1>
+              <h1>Greetings! Welcome also.</h1>
               <h2>Please enjoy your experience.</h2>
             </div>
           );
@@ -47,8 +43,8 @@
       }
       let rootnode = ReactDOM.createRoot(document.getElementById("root"));
       rootnode.render([
-        <MyFunctionalComponentGreeting name="Dorian" />,
-        <MyClassComponentGreeting name="Frank" />,
+        <MyFunctionalComponentGreeting />,
+        <MyClassComponentGreeting />,
       ]);
     </script>
   </body>
