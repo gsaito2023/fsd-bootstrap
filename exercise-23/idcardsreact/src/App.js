@@ -9,7 +9,6 @@ function App() {
   return (
     <div>
       <h1>
-        {" "}
         React functional components are in blue. Class components are in red.
       </h1>
       <IDCards />
