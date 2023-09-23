@@ -7,15 +7,17 @@ import IDcardsClass from "./components/IDcardsClass";
 
 function App() {
   return (
-    <div>
+    <>
       <h1>
         React functional components are in blue. Class components are in red.
       </h1>
-      <IDCards />
-      <IDcardsClass />
-      <IDcardsAmazon />
-      <IDcardsAmazonClass />
-    </div>
+      <div className="container">
+        <IDCards />
+        <IDcardsClass />
+        <IDcardsAmazon />
+        <IDcardsAmazonClass />
+      </div>
+    </>
   );
 }
 
