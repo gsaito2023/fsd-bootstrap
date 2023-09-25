@@ -11,6 +11,8 @@ import Cameras from "./components/Cameras";
 import ComingSoon from "./components/ComingSoon";
 import StartChat from "./components/StartChat";
 import FormSubmit from "./components/FormSubmit";
+import PDP from "./components/PDP";
+import Reviews from "./components/Reviews";
 
 function App() {
   return (
@@ -93,15 +95,12 @@ function App() {
           element={<ComingSoon page="Surveillance" />}
         />
         <Route path="optics" element={<ComingSoon page="Optics" />} />
-        <Route
-          path="productdetails"
-          element={<ComingSoon page="Product Details" />}
-        />
+        <Route path="productdetails" element={<PDP />} />
         <Route path="login" element={<ComingSoon page="Login" />} />
         <Route path="signup" element={<ComingSoon page="Sign Up" />} />
         <Route path="startchat" element={<StartChat />} />
         <Route path="formsubmit" element={<FormSubmit />} />
-        <Route path="reviews" element={<ComingSoon page="Reviews" />} />
+        <Route path="reviews" element={<Reviews />} />
         <Route path="comingsoon" element={<ComingSoon />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
