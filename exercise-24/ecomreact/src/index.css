@@ -228,7 +228,7 @@ a.dropdown-item:hover {
 }
 
 .accordion {
-  max-width: 600px !important;
+  max-width: 1000px !important;
   margin: 50px auto;
   /* box-shadow: 0 2px 25px 0 rgba(110, 130, 208, 0.18) !important; */
 }

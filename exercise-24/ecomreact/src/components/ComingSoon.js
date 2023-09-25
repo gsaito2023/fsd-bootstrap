@@ -1,5 +1,5 @@
 import stay_tuned_img from "../images/stay-tuned.jpg";
-const ComingSoon = () => {
+const ComingSoon = (props) => {
   return (
     <div className="container-fluid content" id="content">
       <nav className="breadcrumb" id="top-content-about-us">
@@ -7,7 +7,7 @@ const ComingSoon = () => {
           Home
         </a>
         <span className="breadcrumb-item active" aria-current="page">
-          Coming Soon
+          {props.page || "Coming Soon"}
         </span>
       </nav>
       <div className="py-5 text-center">
@@ -15,7 +15,7 @@ const ComingSoon = () => {
       </div>
       <div className="py-5 text-center">
         <h1>Stay tuned.</h1>
-        <h1>This page is coming soon!</h1>
+        <h1>{props.page || "This"} page is coming soon!</h1>
       </div>
     </div>
   );

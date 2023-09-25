@@ -7,42 +7,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import PageNotFound from "./components/PageNotFound";
-import OrderStatus from "./components/OrderStatus";
-import AccountInfo from "./components/AccountInfo";
-import Rewards from "./components/Rewards";
-import GiftCards from "./components/GiftCards";
-import PaymentFinancing from "./components/PaymentFinancing";
-import CustomerSupport from "./components/CustomerSupport";
-import International from "./components/International";
-import Careers from "./components/Careers";
-import OurCompany from "./components/OurCompany";
-import Returns from "./components/Returns";
-import FreeShipping from "./components/FreeShipping";
-import Privacy from "./components/Privacy";
-import PersonalInfo from "./components/PersonalInfo";
-import Cookie from "./components/Cookie";
-import TOS from "./components/TOS";
-import Accessibility from "./components/Accessibility";
-import Favorites from "./components/Favorites";
-import Cart from "./components/Cart";
-import Search from "./components/Search";
-import Computers from "./components/Computers";
-import TVs from "./components/TVs";
-import ProVideo from "./components/ProVideo";
-import Mobile from "./components/Mobile";
-import ProAudio from "./components/ProAudio";
-import PhotoAcc from "./components/PhotoAcc";
-import DronesCamcorders from "./components/DronesCamcorders";
-import Lighting from "./components/Lighting";
-import AudioVisual from "./components/AudioVisual";
-import Surveillance from "./components/Surveillance";
-import Optics from "./components/Optics";
 import Cameras from "./components/Cameras";
 import ComingSoon from "./components/ComingSoon";
-import SignUp from "./components/SignUp";
-import PDP from "./components/PDP";
-import Reviews from "./components/Reviews";
-import Login from "./components/Login";
 import StartChat from "./components/StartChat";
 import FormSubmit from "./components/FormSubmit";
 
@@ -55,46 +21,91 @@ function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contactus" element={<ContactUs />} />
         <Route path="faqs" element={<FAQs />} />
-        <Route path="orderstatus" element={<OrderStatus />} />
-        <Route path="accountinfo" element={<AccountInfo />} />
-        <Route path="rewards" element={<Rewards />} />
-        <Route path="giftcards" element={<GiftCards />} />
-        <Route path="paymentfinancing" element={<PaymentFinancing />} />
-        <Route path="custsupport" element={<CustomerSupport />} />
-        <Route path="international" element={<International />} />
-        <Route path="careers" element={<Careers />} />
-        <Route path="ourcompany" element={<OurCompany />} />
-        <Route path="returns" element={<Returns />} />
-        <Route path="freeshipping" element={<FreeShipping />} />
-        <Route path="privacy" element={<Privacy />} />
-        <Route path="personalinfo" element={<PersonalInfo />} />
-        <Route path="cookie" element={<Cookie />} />
-        <Route path="tos" element={<TOS />} />
-        <Route path="accessibility" element={<Accessibility />} />
-        <Route path="favorites" element={<Favorites />} />
-        <Route path="cart" element={<Cart />} />
-        <Route path="search" element={<Search />} />
+        <Route
+          path="orderstatus"
+          element={<ComingSoon page="Order Status" />}
+        />
+        <Route
+          path="accountinfo"
+          element={<ComingSoon page="Account Info" />}
+        />
+        <Route path="rewards" element={<ComingSoon page="Rewards" />} />
+        <Route path="giftcards" element={<ComingSoon page="Gift Cards" />} />
+        <Route
+          path="paymentfinancing"
+          element={<ComingSoon page="Payment & Financing" />}
+        />
+        <Route
+          path="custsupport"
+          element={<ComingSoon page="Customer Support" />}
+        />
+        <Route
+          path="international"
+          element={<ComingSoon page="International" />}
+        />
+        <Route path="careers" element={<ComingSoon page="Careers" />} />
+        <Route path="ourcompany" element={<ComingSoon page="Our Company" />} />
+        <Route path="returns" element={<ComingSoon page="Returns" />} />
+        <Route
+          path="freeshipping"
+          element={<ComingSoon page="Free Shipping" />}
+        />
+        <Route path="privacy" element={<ComingSoon page="Privacy" />} />
+        <Route
+          path="personalinfo"
+          element={
+            <ComingSoon page="Do not Sell or Share My Personal Information" />
+          }
+        />
+        <Route path="cookie" element={<ComingSoon page="Cookie Notice" />} />
+        <Route path="tos" element={<ComingSoon page="Terms of Service" />} />
+        <Route
+          path="accessibility"
+          element={<ComingSoon page="Accessibility" />}
+        />
+        <Route path="favorites" element={<ComingSoon page="Favorites" />} />
+        <Route path="cart" element={<ComingSoon page="Cart" />} />
+        <Route path="search" element={<ComingSoon page="Search" />} />
         <Route path="cameras" element={<Cameras />} />
-        <Route path="computers" element={<Computers />} />
-        <Route path="tvs" element={<TVs />} />
-        <Route path="provideo" element={<ProVideo />} />
-        <Route path="mobile" element={<Mobile />} />
-        <Route path="proaudio" element={<ProAudio />} />
-        <Route path="photoaccessories" element={<PhotoAcc />} />
-        <Route path="dronescamcorders" element={<DronesCamcorders />} />
-        <Route path="lighting" element={<Lighting />} />
-        <Route path="audiovisual" element={<AudioVisual />} />
-        <Route path="surveillance" element={<Surveillance />} />
-        <Route path="optics" element={<Optics />} />
-        <Route path="productdetails" element={<PDP />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<SignUp />} />
+        <Route path="computers" element={<ComingSoon page="Computers" />} />
+        <Route path="tvs" element={<ComingSoon page="TVs" />} />
+        <Route
+          path="provideo"
+          element={<ComingSoon page="Professional Video" />}
+        />
+        <Route path="mobile" element={<ComingSoon page="Mobile" />} />
+        <Route path="proaudio" element={<ComingSoon page="Pro Audio" />} />
+        <Route
+          path="photoaccessories"
+          element={<ComingSoon page="Photo Accessories" />}
+        />
+        <Route
+          path="dronescamcorders"
+          element={<ComingSoon page="Drones & Camcorders" />}
+        />
+        <Route path="lighting" element={<ComingSoon page="Lighting" />} />
+        <Route
+          path="audiovisual"
+          element={<ComingSoon page="Audio Visual" />}
+        />
+        <Route
+          path="surveillance"
+          element={<ComingSoon page="Surveillance" />}
+        />
+        <Route path="optics" element={<ComingSoon page="Optics" />} />
+        <Route
+          path="productdetails"
+          element={<ComingSoon page="Product Details" />}
+        />
+        <Route path="login" element={<ComingSoon page="Login" />} />
+        <Route path="signup" element={<ComingSoon page="Sign Up" />} />
         <Route path="startchat" element={<StartChat />} />
         <Route path="formsubmit" element={<FormSubmit />} />
-        <Route path="reviews" element={<Reviews />} />
+        <Route path="reviews" element={<ComingSoon page="Reviews" />} />
         <Route path="comingsoon" element={<ComingSoon />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      {/* <ComingSoon page="Cameras" /> */}
       <Footer />
     </div>
   );
