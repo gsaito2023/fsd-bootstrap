@@ -10,7 +10,7 @@ const PDP = () => {
           Cameras
         </a>
         <span className="breadcrumb-item active" aria-current="page">
-          Product Details Page
+          Reviews
         </span>
       </nav>
       <div className="py-5 text-center">
@@ -18,7 +18,7 @@ const PDP = () => {
       </div>
       <div className="py-5 text-center">
         <h1>Stay tuned.</h1>
-        <h1>Product Details page is coming soon!</h1>
+        <h1>Reviews page is coming soon!</h1>
       </div>
     </div>
   );
