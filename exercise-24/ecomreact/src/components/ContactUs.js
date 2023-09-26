@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import mail_icon from "../images/mail_black.svg";
@@ -20,9 +21,9 @@ const ContactUs = () => {
   return (
     <div className="container-fluid" id="content">
       <nav className="breadcrumb">
-        <a className="breadcrumb-item" href="/">
+        <Link className="breadcrumb-item" to="/">
           Home
-        </a>
+        </Link>
         <span className="breadcrumb-item active" aria-current="page">
           Contact Us
         </span>

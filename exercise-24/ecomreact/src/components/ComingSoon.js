@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import stay_tuned_img from "../images/stay-tuned.jpg";
 const ComingSoon = (props) => {
   return (
     <div className="container-fluid content" id="content">
       <nav className="breadcrumb" id="top-content-about-us">
-        <a className="breadcrumb-item" href="/">
+        <Link className="breadcrumb-item" to="/">
           Home
-        </a>
+        </Link>
         <span className="breadcrumb-item active" aria-current="page">
           {props.page || "Coming Soon"}
         </span>

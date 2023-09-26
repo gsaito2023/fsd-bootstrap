@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import stay_tuned_img from "../images/stay-tuned.jpg";
 const FormSubmit = () => {
   return (
     <div className="container-fluid content" id="content">
       <nav className="breadcrumb" id="top-content-about-us">
-        <a className="breadcrumb-item" href="/">
+        <Link className="breadcrumb-item" to="/">
           Home
-        </a>
-        <a className="breadcrumb-item" href="/contactus">
+        </Link>
+        <Link className="breadcrumb-item" to="/contactus">
           Contact Us
-        </a>
+        </Link>
         <span className="breadcrumb-item active" aria-current="page">
           Form submittal
         </span>

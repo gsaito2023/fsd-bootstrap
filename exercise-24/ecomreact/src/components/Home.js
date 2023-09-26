@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import camera_img from "../images/grid-cameras.jpg";
 import computer_img from "../images/grid-computers.jpg";
 import tv_img from "../images/grid-TVs.jpg";
@@ -56,8 +57,8 @@ const Home = () => {
                   className="d-flex justify-content-center"
                   id="save-now-cta"
                 >
-                  <a
-                    href="cameras"
+                  <Link
+                    to="cameras"
                     className="btn btn-lg btn-danger py-3"
                     style={{
                       backgroundColor: "red",
@@ -66,7 +67,7 @@ const Home = () => {
                     }}
                   >
                     <span className="display-6 fw-bold">Save now</span>
-                  </a>
+                  </Link>
                 </div>
                 <h1 id="sales-message" style={{ fontSize: "36pt" }}>
                   70% off site wide! Has George lost all his marbles?!
@@ -133,135 +134,147 @@ const Home = () => {
 
           <div className="row " id="product-grid-rows">
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="cameras" className="link-dark">
+              <Link to="cameras" className="link-dark">
                 <img
                   src={camera_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Cameras"
+                  alt="Cameras"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="computers" className="link-dark">
+              <Link to="computers" className="link-dark">
                 <img
                   src={computer_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Computers"
+                  alt="Computers"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="tvs" className="link-dark">
+              <Link to="tvs" className="link-dark">
                 <img
                   src={tv_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="TVs"
+                  alt="TVs"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="provideo" className="link-dark">
+              <Link to="provideo" className="link-dark">
                 <img
                   src={video_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Professional Video"
+                  alt="Professional Video"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="mobile" className="link-dark">
+              <Link to="mobile" className="link-dark">
                 <img
                   src={mobile_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Mobile"
+                  alt="Mobile"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="proaudio" className="link-dark">
+              <Link to="proaudio" className="link-dark">
                 <img
                   src={audiorec_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Pro Audio"
+                  alt="Pro Audio"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="photoaccessories" className="link-dark">
+              <Link to="photoaccessories" className="link-dark">
                 <img
                   src={tripod_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Photo Accessories"
+                  alt="Tripod"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="dronescamcorders" className="link-dark">
+              <Link to="dronescamcorders" className="link-dark">
                 <img
                   src={drones_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Drones and Camcorders"
+                  alt="Drones and Camcorders"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="lighting" className="link-dark">
+              <Link to="lighting" className="link-dark">
                 <img
                   src={lighting_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Lighting"
+                  alt="Lighting"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="audiovisual" className="link-dark">
+              <Link to="audiovisual" className="link-dark">
                 <img
                   src={projectors_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Audio-Visual"
+                  alt="Audio-Visual"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="surveillance" className="link-dark">
+              <Link to="surveillance" className="link-dark">
                 <img
                   src={security_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Surveillance"
+                  alt="Surveillance"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-4 product-grid-cell">
-              <a href="optics" className="link-dark">
+              <Link to="optics" className="link-dark">
                 <img
                   src={optics_img}
                   width="100%"
                   data-toggle="tooltip"
                   title="Optics"
+                  alt="Optics"
                 />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -270,6 +283,7 @@ const Home = () => {
               src={guarantee_icon}
               style={{ width: "200px" }}
               className="align-items-center"
+              alt="Guarantee"
             />
           </div>
 

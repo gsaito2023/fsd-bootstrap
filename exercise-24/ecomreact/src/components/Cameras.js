@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import cart_icon from "../images/add_to_cart_black.svg";
 import camera_icon from "../images/camera_icon_black.svg";
 
@@ -5,9 +6,9 @@ const Cameras = () => {
   return (
     <div className="container-fluid py-2" id="content">
       <nav className="breadcrumb">
-        <a className="breadcrumb-item" href="/">
+        <Link className="breadcrumb-item" to="/">
           Home
-        </a>
+        </Link>
         <span className="breadcrumb-item active" aria-current="page">
           Cameras
         </span>
@@ -45,17 +46,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Sony a6700 Premium Mirrorless Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(1)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -64,9 +68,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -91,17 +95,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Canon EOS R6 Mark II Mirrorless Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(116)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -110,9 +117,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -137,17 +144,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Canon PowerShot ELPH 360 HS Digital Camera (Black)
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(85)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -156,9 +166,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -183,17 +193,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Canon PowerShot G7 X Mark III Digital Camera (Black)
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(52)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -202,9 +215,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -229,17 +242,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Canon PowerShot G7 X Mark II Digital Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(323)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -248,9 +264,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -275,17 +291,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   FUJIFILM INSTAX MINI EVO Instant Camera (Black)
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(63)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -294,9 +313,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -321,17 +340,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Sony a7R V Premium Mirrorless Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(97)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -340,9 +362,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -367,17 +389,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Leica Q3 Premium Digital Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(13)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -386,9 +411,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -413,17 +438,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Nikon Z8 Premium Mirrorless Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(92)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -432,9 +460,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -459,17 +487,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Canon EOS M50 Mark II Mirrorless Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(72)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -478,9 +509,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -505,17 +536,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   FUJIFILM X-T5 Mirrorless Camera (Black)
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(96)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -524,9 +558,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -549,17 +583,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Sony a7CR Premium Mirrorless Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(2)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -568,9 +605,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -595,17 +632,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Sony ZV-E10 Premium Mirrorless Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(76)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -614,9 +654,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -641,17 +681,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Kodak PIXPRO FZ55 Digital Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(942)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -664,7 +707,7 @@ const Cameras = () => {
                     src={cart_icon}
                     width="80"
                     style={{ opacity: "40%" }}
-                    alt="Cart"
+                    alt="/cart"
                   />
                 </div>
               </div>
@@ -690,17 +733,20 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Olympus Tough TG-6 Digital Camera (Red)
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">
                     &#9733;&#9733;&#9733;&#9733;
                   </span>{" "}
                   <span className="text-dark">(157)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -709,9 +755,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -736,15 +782,18 @@ const Cameras = () => {
                 </h4>
               </div>
               <h5>
-                <a href="productdetails" className="text-dark font-weight-bold">
+                <Link
+                  to="/productdetails"
+                  className="text-dark font-weight-bold"
+                >
                   Ricoh GR III Diary Edition Digital Camera
-                </a>
+                </Link>
               </h5>
               <p className="small mb-1 py-2">
-                <a href="reviews" className="text-decoration-none">
+                <Link to="/reviews" className="text-decoration-none">
                   <span className="font-weight-bold text-warning">&#9733;</span>{" "}
                   <span className="text-dark">(131)</span>
-                </a>
+                </Link>
               </p>
               <div>
                 <div>
@@ -753,9 +802,9 @@ const Cameras = () => {
                 </div>
                 <div className="add-to-cart">
                   {" "}
-                  <a href="cart">
-                    <img src={cart_icon} width="80" alt="Cart" />
-                  </a>
+                  <Link to="/cart">
+                    <img src={cart_icon} width="80" alt="/cart" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -764,33 +813,33 @@ const Cameras = () => {
 
         <ul className="pagination justify-content-center">
           <li className="page-item">
-            <a className="page-link" href="comingsoon">
+            <Link className="page-link" to="/comingsoon">
               Previous
-            </a>
+            </Link>
           </li>
           <li className="page-item active">
-            <a
+            <Link
               className="page-link"
-              href="cameras"
+              to="/cameras"
               style={{ backgroundColor: "grey", border: "none" }}
             >
               1
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a className="page-link" href="comingsoon">
+            <Link className="page-link" to="/comingsoon">
               2
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a className="page-link" href="comingsoon">
+            <Link className="page-link" to="/comingsoon">
               3
-            </a>
+            </Link>
           </li>
           <li className="page-item">
-            <a className="page-link" href="comingsoon">
+            <Link className="page-link" to="/comingsoon">
               Next
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

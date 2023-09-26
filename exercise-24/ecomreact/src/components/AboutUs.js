@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import info_icon from "../images/i_icon_black.svg";
 const AboutUs = () => {
   return (
     <div className="container-fluid" id="content">
       <nav className="breadcrumb" id="top-content-about-us">
-        <a className="breadcrumb-item" href="/">
+        <Link className="breadcrumb-item" to="/">
           Home
-        </a>
+        </Link>
         <span className="breadcrumb-item active" aria-current="page">
           About Us
         </span>

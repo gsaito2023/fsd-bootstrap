@@ -185,17 +185,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="px-2">
-                <Link
-                  href="https://youtube.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Link to="https://youtube.com" target="_blank" rel="noreferrer">
                   <img src={youtube_icon} width="30" alt="YouTube" />
                 </Link>
               </li>
               <li className="px-2">
                 <Link
-                  href="https://whatsapp.com"
+                  to="https://whatsapp.com"
                   target="_blank"
                   rel="noreferrer"
                 >

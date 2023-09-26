@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import faq_icon from "../images/faq_icon_black.png";
 import AccordionData from "../AccordionData";
 
@@ -6,9 +7,9 @@ const FAQs = () => {
     <div className="container-fluid" id="content">
       <div className="content faqs">
         <nav className="breadcrumb">
-          <a className="breadcrumb-item" href="/">
+          <Link className="breadcrumb-item" to="/">
             Home
-          </a>
+          </Link>
           <span className="breadcrumb-item active" aria-current="page">
             FAQs
           </span>
