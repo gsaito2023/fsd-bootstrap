@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import g_logo from "../images/g-logo.png";
 import home_icon from "../images/home_icon_white.svg";
 import favorites_icon from "../images/heart_icon_white.svg";
@@ -8,8 +9,9 @@ import cart_icon from "../images/cart_icon_white.svg";
 const Navbar = () => {
   let navigate = useNavigate();
 
-  const searchRouteChange = () => {
-    navigate("search");
+  const searchRouteChange = (e) => {
+    e.preventDefault();
+    navigate("/search");
   };
 
   const loginRouteChange = () => {
@@ -41,7 +43,11 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav me-auto mt-2 mt-lg-0 d-flex align-items-center">
               <li className="nav-item">
-                <a className="nav-link text-light" href="/" aria-current="page">
+                <Link
+                  className="nav-link text-light"
+                  to="/"
+                  aria-current="page"
+                >
                   <img
                     src={home_icon}
                     width="45"
@@ -50,73 +56,71 @@ const Navbar = () => {
                     alt="Home"
                   />
                   <span className="visually-hidden">(current)</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle text-light"
-                  href="index.html"
                   id="dropdownId"
                   data-bs-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
                   Our Products
-                </a>
+                </Link>
                 <div className="dropdown-menu" aria-labelledby="dropdownId">
-                  <a className="dropdown-item" href="cameras">
+                  <Link className="dropdown-item" to="cameras">
                     Cameras
-                  </a>
-                  <a className="dropdown-item" href="computers">
+                  </Link>
+                  <Link className="dropdown-item" to="computers">
                     Computers
-                  </a>
-                  <a className="dropdown-item" href="tvs">
+                  </Link>
+                  <Link className="dropdown-item" to="tvs">
                     TVs
-                  </a>
-                  <a className="dropdown-item" href="provideo">
+                  </Link>
+                  <Link className="dropdown-item" to="provideo">
                     Professional Video
-                  </a>
-                  <a className="dropdown-item" href="mobile">
+                  </Link>
+                  <Link className="dropdown-item" to="mobile">
                     Mobile
-                  </a>
-
-                  <a className="dropdown-item" href="proaudio">
+                  </Link>
+                  <Link className="dropdown-item" to="proaudio">
                     Pro Audio
-                  </a>
-                  <a className="dropdown-item" href="photoaccessories">
+                  </Link>
+                  <Link className="dropdown-item" to="photoaccessories">
                     Photo Accessories
-                  </a>
-                  <a className="dropdown-item" href="dronescamcorders">
+                  </Link>
+                  <Link className="dropdown-item" to="dronescamcorders">
                     Drones & Camcorders
-                  </a>
-                  <a className="dropdown-item" href="lighting">
+                  </Link>
+                  <Link className="dropdown-item" to="lighting">
                     Lighting
-                  </a>
-                  <a className="dropdown-item" href="audiovisual">
+                  </Link>
+                  <Link className="dropdown-item" to="audiovisual">
                     Audio-Visual
-                  </a>
-                  <a className="dropdown-item" href="surveillance">
+                  </Link>
+                  <Link className="dropdown-item" to="surveillance">
                     Surveillance
-                  </a>
-                  <a className="dropdown-item" href="optics">
+                  </Link>
+                  <Link className="dropdown-item" to="optics">
                     Optics
-                  </a>
+                  </Link>
                 </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="aboutus">
+                <Link className="nav-link text-light" to="aboutus">
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="contactus">
+                <Link className="nav-link text-light" to="contactus">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-light" href="faqs">
+                <Link className="nav-link text-light" to="faqs">
                   FAQs
-                </a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex my-2 my-lg-0">
@@ -136,7 +140,7 @@ const Navbar = () => {
             </form>
 
             <span className="px-3">
-              <a href="favorites">
+              <Link to="favorites">
                 <img
                   src={favorites_icon}
                   width="40"
@@ -144,10 +148,10 @@ const Navbar = () => {
                   title="Favorites"
                   alt="Favorites"
                 />
-              </a>
+              </Link>
             </span>
             <span>
-              <a href="cart">
+              <Link to="cart">
                 {" "}
                 <img
                   src={cart_icon}
@@ -156,7 +160,7 @@ const Navbar = () => {
                   title="Cart"
                   alt="Cart"
                 />
-              </a>
+              </Link>
             </span>
             <span className="ps-3">
               <button
@@ -230,12 +234,12 @@ const Navbar = () => {
 
                 <p className="py-5">
                   Not a member?
-                  <a
-                    href="signup"
+                  <Link
+                    to="signup"
                     className="text-light text-decoration-none ps-2"
                   >
                     Sign up now
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 import g_logo from "../images/g-logo.png";
 import electronics_logo from "../images/g-electronics.png";
 
@@ -16,143 +16,141 @@ const Footer = () => {
         <div className="col-6 col-md-2 mb-3 text-light px-3 py-2">
           <h3 className="pb-3">Your Stuff</h3>
           <div>
-            <a
-              href="orderstatus"
+            <Link
+              to="orderstatus"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Order Status
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="accountinfo"
+            <Link
+              to="accountinfo"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Account Info
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="rewards"
+            <Link
+              to="rewards"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Rewards
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="giftcards"
+            <Link
+              to="giftcards"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Gift Cards
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="paymentfinancing"
+            <Link
+              to="paymentfinancing"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Payments & Financing
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="col-6 col-md-2 mb-3 text-light px-3 py-2">
           <h3 className="pb-3">Get in Touch</h3>
           <div>
-            <a
-              href="contactus"
+            <Link
+              to="contactus"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="custsupport"
+            <Link
+              to="custsupport"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Customer Support
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="international"
+            <Link
+              to="international"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               International
-            </a>
+            </Link>
           </div>
           <div>
-            <a href="contactus#vist-store" style={{ textDecoration: "none" }}>
-              <HashLink
-                className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                to={"/contactus#vist-store"}
-              >
-                Visit a Store
-              </HashLink>
-            </a>
+            <Link
+              className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              to="contactus#vist-store"
+            >
+              Visit a Store
+            </Link>
           </div>
           <div>
-            <a
-              href="careers"
+            <Link
+              to="careers"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Careers
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="col-6 col-md-2 mb-3 text-light px-3 py-2">
           <h3 className="pb-3">Our Company</h3>
           <div>
-            <a
-              href="aboutus"
+            <Link
+              to="aboutus"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               About Us
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="ourcompany"
+            <Link
+              to="ourcompany"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Our Company
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="returns"
+            <Link
+              to="returns"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Returns
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="freeshipping"
+            <Link
+              to="freeshipping"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               Free Shipping
-            </a>
+            </Link>
           </div>
           <div>
-            <a
-              href="faqs"
+            <Link
+              to="faqs"
               className="p-0 link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
             >
               FAQs
-            </a>
+            </Link>
           </div>
         </div>
 
         <div className="col-md-5 offset-md-1 mb-3" id="footer-logo">
           <div>
-            <a href="/">
+            <Link to="/">
               <img src={g_logo} width="100" alt="Small logo" />
               <img src={electronics_logo} width="200" alt="Large logo" />
-            </a>
+            </Link>
           </div>
           <div className="pt-3 px-3">
             <img src={cc_logos} width="200" alt="Credit cards" />
@@ -160,81 +158,89 @@ const Footer = () => {
           <div className="d-flex flex-column flex-sm-row justify-content-between py-2 px-2">
             <ul className="list-unstyled d-flex pt-2">
               <li className="px-2">
-                <a
-                  href="https://www.facebook.com"
+                <Link
+                  to="https://www.facebook.com"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={facebook_icon} width="30" alt="Facebook" />
-                </a>
+                </Link>
               </li>
               <li className="px-2">
-                <a
-                  href="https://www.instagram.com"
+                <Link
+                  to="https://www.instagram.com"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={instagram_icon} width="30" alt="Instagram" />
-                </a>
+                </Link>
               </li>
               <li className="px-2">
-                <a
-                  href="https://www.reddit.com"
+                <Link
+                  to="https://www.reddit.com"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img src={reddit_icon} width="30" alt="Reddit" />
-                </a>
+                </Link>
               </li>
               <li className="px-2">
-                <a href="https://youtube.com" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={youtube_icon} width="30" alt="YouTube" />
-                </a>
+                </Link>
               </li>
               <li className="px-2">
-                <a href="https://whatsapp.com" target="_blank" rel="noreferrer">
+                <Link
+                  href="https://whatsapp.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={whatsapp_icon} width="30" alt="WhatsApp" />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="d-flex text-light">
           <span className="pe-3">©2023 All rights reserved.</span>|
-          <a
-            href="privacy"
+          <Link
+            to="privacy"
             className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
           >
             Privacy Notice
-          </a>
+          </Link>
           |
-          <a
-            href="personalinfo"
+          <Link
+            to="personalinfo"
             className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
           >
             Do not Sell or Share My Personal Information
-          </a>
+          </Link>
           |
-          <a
-            href="cookie"
+          <Link
+            to="cookie"
             className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
           >
             Cookie Notice
-          </a>
+          </Link>
           |
-          <a
-            href="tos"
+          <Link
+            to="tos"
             className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
           >
             Terms of Service
-          </a>
+          </Link>
           |
-          <a
-            href="accessibility"
+          <Link
+            to="accessibility"
             className="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover px-3"
           >
             Accessibility
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
