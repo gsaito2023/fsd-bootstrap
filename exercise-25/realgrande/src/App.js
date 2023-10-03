@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -28,7 +27,7 @@ function App() {
       //write the data to the state so we can use it anywhere in the component
     };
     fetchData();
-  }, []);
+  }, [housesData]);
 
   return (
     <div className="container-fluid">
